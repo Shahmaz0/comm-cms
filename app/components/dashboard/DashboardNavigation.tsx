@@ -15,10 +15,11 @@ const links = [
         name: "Products",
         href: "/dashboard/products"
     },{
-        name: "Categories",
-        href: "/dashboard/categories"
+        name: "Banner Picture",
+        href: "/dashboard/banner"
     }
 ]
+
 
 export function DashboardNavigation() {
     const pathName = usePathname();

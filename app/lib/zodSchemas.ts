@@ -6,7 +6,13 @@ export const productSchema = z.object({
     status: z.enum(["draft", "published", "archived"]),
     price: z.number().min(1),
     images: z.array(z.string()).min(1, "Atleast one image is required"),
-    category: z.enum(["men", "women"]),
+    category: z.enum(["men", "women", "kids"]),
     isFeatured: z.boolean().optional(),
   
 })
+
+export const bannerSchema = z.object({
+    title: z.string(),
+    imageString: z.string(),
+})
+
